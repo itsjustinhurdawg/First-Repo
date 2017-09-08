@@ -1,0 +1,10 @@
+-HTML-
+<input type="text" id ="userName"></input>
+<button onclick="showName()"> Show my name</button>
+<p id="one"></p>
+
+-JAVASCRIPT-
+function showName() {
+ var userName = document.getElementById('userName').value;
+ document.getElementById('one').innerHTML="Hello" + userName; 
+}
