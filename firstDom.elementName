@@ -1,0 +1,12 @@
+-HTML-
+<p id="one">Justin Hur</p>
+
+-JavaScript-
+var x = prompt ("Name");
+document.getElementById('one').innerHTML = x;
+
+-CSS-
+#one
+{
+  font-size:100px;
+}
