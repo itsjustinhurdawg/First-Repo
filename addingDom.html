@@ -1,0 +1,26 @@
+--HTML--
+<p> type here </p>
+<input type="text" id="a"></input>
+<body>
+<button onclick="addAnother()">
+  Click Here
+  </button>
+<ul>
+  </ul>
+  </body>
+  
+  --JAVASCRIPT--
+  function addAnother() {
+var stuff= document.getElementById('a').value;
+    //create a new element and store it in a variable
+    var newListItem = document.createElement('li');
+    //create a new text node and sore it in a variable
+    var newText = document.createTextNode(stuff);
+    //Attach the new text node to the new element. Notice there are no quote
+    newListItem.appendChild(newText);
+    //Find the new position where the new element should be
+    var position = document.getElementsByTagName('ul')[0];
+    //Insert the new element into its position.
+    position.appendChild(newListItem);
+    //Append Child is adding things together
+  }
